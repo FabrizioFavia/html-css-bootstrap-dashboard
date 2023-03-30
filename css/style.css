@@ -1,6 +1,6 @@
 /*************** HELPER **************/
 :root{
-    --navbar-height: 60px;
+    --navbar-height: 58px;
 }
 
 *{
@@ -20,6 +20,8 @@
 /*************** HELPER END **************/
 
 /* HEADER */
+
+
 .smallLogo{
     height: 45px;
     display: none;
@@ -32,11 +34,16 @@
 }
 
 /* ASIDE */
+aside{
+    height: 100%;
+}
+
 .sideBar{
     width: 150px;
     height: calc(100vh - var(--navbar-height));
     background-image: url(../img/sidebar-bg.png);
     background-color:#051e34;
+    position: fixed;
 }
 
 .inverted{
@@ -47,6 +54,10 @@
 /* MAIN */
 
 .debugHeight{height: 140px;}
+
+.main-container{
+    margin-left: 150px;
+}
 
 
 /*************** MEDIA QUERY ***************/

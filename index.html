@@ -26,12 +26,12 @@
 <body>
 
     <header>
-        <nav class="navbar bg-light d-flex fixed-top">
+        <nav class="navbar bg-white d-flex fixed-top">
             <div class="container-fluid align-items-center">
                 <img class="smallLogo mt-1 img-fluid" src="./img/mobile-logo.png" alt="mobile logo">
                 <img class="navbarLogo mt-1" src="./img/logo.svg" alt="logo">
                 <form class="d-flex flex-grow-1" role="search">
-                    <input class="form-control me-4 ms-4 mt-1" type="search"
+                    <input class="form-control bckLightGrey me-4 ms-4 mt-1" type="search"
                         placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
                 </form>
                 <a href=""><i class=" navItem fa-solid fa-list text-black me-4 customGrey mt-1"></i></a>
@@ -42,7 +42,7 @@
         </nav>
     </header>
 
-    
+    <div class="topBox d-flex">
         <!-- SIDEBAR -->
         <aside>
             <div class="sideBar d-flex flex-column justify-content-between align-items-center ">
@@ -70,9 +70,63 @@
 
             </div>
         </aside>
-        <main>
+
+        <!-- MAIN -->
+        <main class="main-container container-fluid p-0 w-100">
+
+
+            <div class="container-fluid p-0">
+
+                <div class="row bckLightblue w-100 m-0">
+                    <div class="col-12 col-md-4 col-lg-6 border border-danger debugHeight ">
+                        <span class="text-white fs-4">Boolean</span>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-3  border border-danger debugHeight">
+
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-3  border border-danger debugHeight">
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="container-fluid p-0">
+                <div class="row w-100 m-0">
+
+                    <!-- COLUMN LEFT -->
+                    <div class="col-lg-8 col-12 border border-danger">
+
+                        <!-- CARD -->
+                        <div class="card my-4">
+                            <h5 class="card-header">Featured</h5>
+                            <div class="card-body">
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, nesciunt perspiciatis. Quia rerum dolorem voluptatem praesentium nobis maiores, corporis, itaque optio facilis dolorum ipsam molestias, porro quae? Eligendi, voluptate iste.</p>
+                              
+                            </div>
+                          </div>
+                          <!-- CARD -->
+                          <div class="card my-4">
+                            <h5 class="card-header">Featured</h5>
+                            <div class="card-body">
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, nesciunt perspiciatis. Quia rerum dolorem voluptatem praesentium nobis maiores, corporis, itaque optio facilis dolorum ipsam molestias, porro quae? Eligendi, voluptate iste.</p>
+                              
+                            </div>
+                          </div>
+                    </div>
+
+                    <!-- COLUMN RIGHT -->
+                    <div class="col-lg-4 col-12 border border-danger debugHeight">
+
+                    </div>
+                </div>
+            </div>
+
+
+
         </main>
         <footer></footer>
+
     </div>
 </body>
 
