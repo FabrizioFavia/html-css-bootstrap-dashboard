@@ -1,2 +1,56 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
 .customGrey{color: #5b5858;}
 .customYellow{color: #ff8f00}
+
+.smallLogo{
+    height: 45px;
+    display: none;
+}
+
+.sideBar{
+    margin-top: 60px;
+    width: 150px;
+    height: calc(100vh - 60px);
+    background-image: url(../img/sidebar-bg.png);
+    background-color:#051e34;
+}
+
+.inverted{
+    filter: invert(1);
+    width: 17px;
+}
+
+@media screen and (max-width: 768px){
+    
+    .navItem, .navbarLogo{
+        display: none;
+    }
+
+    .smallLogo{
+        display: block;
+    }
+
+    .sideBar{
+        width: 70px;
+    }
+    
+    .sideDscrpt{
+        display: none;
+    }
+
+    .sideElement{
+        margin-left: 5px;
+    }
+    
+}
+
+@media screen and (max-width: 576px){
+    
+    
+}
+
