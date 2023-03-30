@@ -37,7 +37,17 @@
                 <a href=""><i class=" navItem fa-solid fa-list text-black me-4 customGrey mt-1"></i></a>
                 <a href=""><i class="navItem fa-solid fa-circle-question me-4 customGrey mt-1"></i></a>
                 <a href=""><i class="navItem fa-solid fa-ellipsis-vertical me-4 customGrey mt-1"></i>
-                    <a href=""><i class="fa-solid fa-bell customYellow mt-1"></i></a>
+                    <a href=""><i class="fa-solid fa-bell customYellow "></i></a>
+
+                    <!-- <a href=""><i class="fa-solid fa-bell customYellow " data-bs-toggle="dropdown" aria-expanded="false">
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
+                    </i>
+                    </a> -->
             </div>
         </nav>
     </header>
@@ -78,13 +88,17 @@
             <div class="container-fluid p-0">
 
                 <div class="row bckLightblue w-100 m-0">
+
                     <div class="col-12 col-md-4 col-lg-6 border border-danger debugHeight ">
                         <span class="text-white fs-4">Boolean</span>
                     </div>
-                    <div class="col-12 col-md-4 col-lg-3  border border-danger debugHeight">
 
-                    </div>
                     <div class="col-12 col-md-4 col-lg-3  border border-danger debugHeight">
+                        <p class="text-white pt-3 mb-0 fs-6">Studenti online negli ultimi 30 minuti</p>
+                        <span class="fs-4 text-white">125</span>
+                    </div>
+
+                    <div class="col-12 col-md-4 col-lg-3 order-1 border border-danger debugHeight">
 
                     </div>
                 </div>
@@ -95,29 +109,190 @@
                 <div class="row w-100 m-0">
 
                     <!-- COLUMN LEFT -->
-                    <div class="col-lg-8 col-12 border border-danger">
+                    <div class="col-lg-8 col-12">
 
                         <!-- CARD -->
-                        <div class="card my-4">
-                            <h5 class="card-header">Featured</h5>
-                            <div class="card-body">
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, nesciunt perspiciatis. Quia rerum dolorem voluptatem praesentium nobis maiores, corporis, itaque optio facilis dolorum ipsam molestias, porro quae? Eligendi, voluptate iste.</p>
-                              
+                        <div class="card my-3">
+                            <h5 class="card-header">Prossime classi</h5>
+                            <table class="table table-sm table-hover">
+                                <thead>
+                                  <tr>
+                                    <td scope="col"><small>Nome</small></td>
+                                    <td scope="col"><small>Nome</small></td>
+                                    <td scope="col"><small>Nome</small></td>
+                                    <td scope="col"><small>Nome</small></td>
+                                    <td scope="col"><small>Nome</small></td>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row"><img class="tableImg" src="./img/class-avatar.jpg" alt="class"></th>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                    <td>@mdo</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row"><img class="tableImg" src="./img/class-avatar.jpg" alt="class"></th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                    <td>@fat</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row"><img class="tableImg" src="./img/class-avatar.jpg" alt="class"></th>
+                                    <td colspan="2">Larry the Bird</td>
+                                    <td>@twitter</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row"><img class="tableImg" src="./img/class-avatar.jpg" alt="class"></th>
+                                    <td colspan="2">Larry the Bird</td>
+                                    <td>@twitter</td>
+                                  </tr>
+                                  <tr>
+                                    <td scope="row"><img class="tableImg me-1" src="./img/class-avatar.jpg" alt="class"><small> Classe 75</small></td>
+                                    <td colspan="2">Larry the Bird</td>
+                                    <td>@twitter</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row"><img class="tableImg" src="./img/class-avatar.jpg" alt="class"></th>
+                                    <td colspan="2">Larry the Bird</td>
+                                    <td>@twitter</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row"><img class="tableImg" src="./img/class-avatar.jpg" alt="class"></th>
+                                    <td colspan="2">Larry the Bird</td>
+                                    <td>@twitter</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row"><img class="tableImg" src="./img/class-avatar.jpg" alt="class"></th>
+                                    <td colspan="2">Larry the Bird</td>
+                                    <td>@twitter</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                        </div>
+
+                        <!-- FAQ -->
+                        <div class="card my-3">
+                            <h5 class="card-header">F.A.Q</h5>
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            <small>Come aggiungere un nuovo studente?</small>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show"
+                                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <strong>This is the first item's accordion body.</strong> It is shown by
+                                            default, until the collapse plugin adds the appropriate classes that we use
+                                            to
+                                            style each element. These classes control the overall appearance, as well as
+                                            the
+                                            showing and hiding via CSS transitions. You can modify any of this with
+                                            custom
+                                            CSS or overriding our default variables. It's also worth noting that just
+                                            about
+                                            any HTML can go within the <code>.accordion-body</code>, though the
+                                            transition
+                                            does limit overflow.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+                                            Accordion Item #2
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                        aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <strong>This is the second item's accordion body.</strong> It is hidden by
+                                            default, until the collapse plugin adds the appropriate classes that we use
+                                            to
+                                            style each element. These classes control the overall appearance, as well as
+                                            the
+                                            showing and hiding via CSS transitions. You can modify any of this with
+                                            custom
+                                            CSS or overriding our default variables. It's also worth noting that just
+                                            about
+                                            any HTML can go within the <code>.accordion-body</code>, though the
+                                            transition
+                                            does limit overflow.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                            Accordion Item #3
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse"
+                                        aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <strong>This is the third item's accordion body.</strong> It is hidden by
+                                            default, until the collapse plugin adds the appropriate classes that we use
+                                            to
+                                            style each element. These classes control the overall appearance, as well as
+                                            the
+                                            showing and hiding via CSS transitions. You can modify any of this with
+                                            custom
+                                            CSS or overriding our default variables. It's also worth noting that just
+                                            about
+                                            any HTML can go within the <code>.accordion-body</code>, though the
+                                            transition
+                                            does limit overflow.
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                          </div>
-                          <!-- CARD -->
-                          <div class="card my-4">
-                            <h5 class="card-header">Featured</h5>
-                            <div class="card-body">
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, nesciunt perspiciatis. Quia rerum dolorem voluptatem praesentium nobis maiores, corporis, itaque optio facilis dolorum ipsam molestias, porro quae? Eligendi, voluptate iste.</p>
-                              
-                            </div>
-                          </div>
+                        </div>
                     </div>
 
                     <!-- COLUMN RIGHT -->
-                    <div class="col-lg-4 col-12 border border-danger debugHeight">
+                    <div class="col-lg-4 col-12 pt-3">
 
+                        <!-- TODO -->
+                        <div class="card">
+                            <h5 class="card-header">Todo</h5>
+                            <div class="card-body">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, nesciunt
+                                    perspiciatis. Quia rerum dolorem voluptatem praesentium nobis maiores, corporis,
+                                    itaque optio facilis dolorum ipsam molestias, porro quae? Eligendi, voluptate iste.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- CARD STATS -->
+                        <div class="card w-100 my-3 p-3">
+                            <div class="card w-100">
+                                <img src="./img/stats.jpeg" class="card-img-top" alt="Stats">
+                                <div class="card-body">
+
+                                    <p class="card-title">Utenti attivi</p>
+                                    <small>Lista degli utenti attivi in piattaforma nell'ultimo mese</small>
+
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"><small>Gennaio: 1200</small></li>
+                                    <li class="list-group-item"><small>Febbraio: 800</small></li>
+                                    <li class="list-group-item"><small>Marzo: 1500</small></li>
+                                </ul>
+                                <div class="card-body">
+                                    <a href="#" class="card-link"><small>Visualizza report approfondito</small></a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

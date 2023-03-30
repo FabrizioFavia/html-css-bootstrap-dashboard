@@ -23,12 +23,12 @@
 
 
 .smallLogo{
-    height: 45px;
+    height: 38px;
     display: none;
 }
 
 .topBox{
-    min-width: 100vw;
+    min-width: 100%;
     margin-top: var(--navbar-height);
     
 }
@@ -53,10 +53,14 @@ aside{
 
 /* MAIN */
 
-.debugHeight{height: 140px;}
+.debugHeight{height: 90px;}
 
 .main-container{
     margin-left: 150px;
+}
+
+.tableImg{
+    width: 20px;
 }
 
 
@@ -73,7 +77,9 @@ aside{
     
     .sideDscrpt{display: none;}
 
-    .sideElement{margin-left: 5px;}  
+    .sideElement{margin-left: 5px;}
+    
+    .main-container{margin-left: 70px;}
 }
 
 /* SM-XS SCREENS */
