@@ -1,21 +1,40 @@
+/*************** HELPER **************/
+:root{
+    --navbar-height: 60px;
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
 }
+
+/* COLORS AND BACKGROUND COLORS */
 .customGrey{color: #5b5858;}
 .customYellow{color: #ff8f00}
 
+.bckLightGrey{background-color: #e5e5e5;}
+.bckLightblue{background-color: #1b72e8;}
+
+/*************** HELPER END **************/
+
+/* HEADER */
 .smallLogo{
     height: 45px;
     display: none;
 }
 
+.topBox{
+    min-width: 100vw;
+    margin-top: var(--navbar-height);
+    
+}
+
+/* ASIDE */
 .sideBar{
-    margin-top: 60px;
     width: 150px;
-    height: calc(100vh - 60px);
+    height: calc(100vh - var(--navbar-height));
     background-image: url(../img/sidebar-bg.png);
     background-color:#051e34;
 }
@@ -25,32 +44,29 @@
     width: 17px;
 }
 
+/* MAIN */
+
+.debugHeight{height: 140px;}
+
+
+/*************** MEDIA QUERY ***************/
+
+/* MEDIUM SCREENS */
 @media screen and (max-width: 768px){
-    
-    .navItem, .navbarLogo{
-        display: none;
-    }
 
-    .smallLogo{
-        display: block;
-    }
+    .navItem, .navbarLogo{display: none;}
 
-    .sideBar{
-        width: 70px;
-    }
-    
-    .sideDscrpt{
-        display: none;
-    }
+    .smallLogo{display: block;}
 
-    .sideElement{
-        margin-left: 5px;
-    }
+    .sideBar{width: 70px;}
     
+    .sideDscrpt{display: none;}
+
+    .sideElement{margin-left: 5px;}  
 }
 
+/* SM-XS SCREENS */
 @media screen and (max-width: 576px){
-    
-    
+      
 }
 
