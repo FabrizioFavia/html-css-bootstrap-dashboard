@@ -41,11 +41,16 @@ body{
     max-height: 54px;
 }
 
+.bellBtn:active{
+    color: white;
+}
+
 
 .smallLogo{
     height: 38px;
     display: none;
 }
+
 
 .topBox{
     height: calc(100% - var(--navbar-height));
@@ -58,10 +63,6 @@ body{
     box-shadow: none;
 }
 
-.accordion-button:focus{
-    border-color: none;
-    box-shadow: none;
-}
 
 /* ASIDE */
 aside{
@@ -96,6 +97,11 @@ aside{
 
 .main-container{
     margin-left: 150px;
+}
+
+.accordion-button:focus{
+    border-color: none;
+    box-shadow: none;
 }
 
 .tableImg{
