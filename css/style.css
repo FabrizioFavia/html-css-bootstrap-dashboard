@@ -1,6 +1,6 @@
 /*************** HELPER **************/
 :root{
-    --navbar-height: 58px;
+    --navbar-height: 54px;
 }
 
 *{
@@ -10,6 +10,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+body{
+    height: 100vh;
+}
+
 /* COLORS AND BACKGROUND COLORS */
 .customGrey{color: #5b5858;}
 .customYellow{color: #ff8f00}
@@ -17,9 +21,20 @@
 .bckLightGrey{background-color: #e5e5e5;}
 .bckLightblue{background-color: #1b72e8;}
 
+.borderGrey{border: 1px solid #252323;;}
+
+/* CUSTOM FONT-SIZE */
+
+.my-fs10{font-size: 11px;}
+.my-fs14{font-size: 14px;}
+
 /*************** HELPER END **************/
 
 /* HEADER */
+
+.navbar{
+    max-height: 54px;
+}
 
 
 .smallLogo{
@@ -28,8 +43,9 @@
 }
 
 .topBox{
+    height: calc(100% - var(--navbar-height));
     min-width: 100%;
-    margin-top: var(--navbar-height);
+    overflow-y: auto;
     
 }
 
@@ -53,7 +69,7 @@ aside{
 
 /* MAIN */
 
-.debugHeight{height: 90px;}
+.debugHeight{height: 130px;}
 
 .main-container{
     margin-left: 150px;
@@ -62,6 +78,12 @@ aside{
 .tableImg{
     width: 20px;
 }
+
+.tableLogo{
+    width: 24px;
+    height: 24px;
+}
+
 
 
 /*************** MEDIA QUERY ***************/
@@ -77,9 +99,15 @@ aside{
     
     .sideDscrpt{display: none;}
 
+    .customTd{width: 75%;}
+
+    .hiddenTableElement{display:none;}
+
     .sideElement{margin-left: 5px;}
     
     .main-container{margin-left: 70px;}
+
+    .centerContainer{width: calc(100% - 70px);}
 }
 
 /* SM-XS SCREENS */
