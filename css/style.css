@@ -95,6 +95,12 @@ aside{
     line-height: 21px;
 }
 
+.customBtn:hover{
+    background-color: white;
+    color: #165bba;
+
+}
+
 .main-container{
     margin-left: 150px;
 }
