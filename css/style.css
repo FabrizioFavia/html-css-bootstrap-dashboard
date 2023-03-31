@@ -28,7 +28,10 @@ body{
 
 .my-fs8{font-size: 8px;}
 .my-fs10{font-size: 10px;}
+.my-fs12{font-size: 12px;}
 .my-fs14{font-size: 14px;}
+
+
 
 /*************** HELPER END **************/
 
@@ -47,8 +50,17 @@ body{
 .topBox{
     height: calc(100% - var(--navbar-height));
     min-width: 100%;
-    overflow-y: auto;
-    
+    overflow-y: auto; 
+}
+
+.form-control:focus{
+    border-color: none;
+    box-shadow: none;
+}
+
+.accordion-button:focus{
+    border-color: none;
+    box-shadow: none;
 }
 
 /* ASIDE */
@@ -70,6 +82,10 @@ aside{
 }
 
 /* MAIN */
+
+.plusElement{
+    display: none;
+}
 
 .customBtn{
     height: 34px;
@@ -95,6 +111,14 @@ aside{
 
 /*************** MEDIA QUERY ***************/
 
+/* LARGE SCREENS */
+@media screen and (max-width: 992px){
+
+    .hiddenBlueElement{display: none;}
+
+    .plusElement{display: inline-block;}
+}
+
 /* MEDIUM SCREENS */
 @media screen and (max-width: 768px){
 
@@ -110,15 +134,20 @@ aside{
 
     .hiddenTableElement{display:none;}
 
+    .hiddenBlueElement{display: none;}
+
+    .plusElement{display: inline-block;}
+
     .sideElement{margin-left: 5px;}
     
     .main-container{margin-left: 70px;}
 
     .centerContainer{width: calc(100% - 70px);}
+
+    #second{
+        display: flex;
+        order: -1;
+    }
 }
 
-/* SM-XS SCREENS */
-@media screen and (max-width: 576px){
-      
-}
 
