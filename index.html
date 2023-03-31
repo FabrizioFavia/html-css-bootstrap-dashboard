@@ -34,27 +34,31 @@
                 <img class="navbarLogo mt-1" src="./img/logo.svg" alt="logo">
                 <form class="me-2 ms-2 d-flex flex-grow-1">
                     <div class="input-group">
-                      <span class="input-group-text bckLightGrey" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
-                      <input type="text" class="form-control border-start-0 bckLightGrey" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Username" aria-describedby="basic-addon1">
+                        <span class="input-group-text bckLightGrey" id="basic-addon1"><i
+                                class="fa-solid fa-magnifying-glass"></i></span>
+                        <input type="text" class="form-control border-start-0 bckLightGrey"
+                            placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Username"
+                            aria-describedby="basic-addon1">
                     </div>
-                  </form>
+                </form>
                 <a href=""><i class=" navItem fa-solid fa-list text-black me-4 customGrey mt-1"></i></a>
                 <a href=""><i class="navItem fa-solid fa-circle-question me-4 customGrey mt-1"></i></a>
                 <a href=""><i class="navItem fa-solid fa-ellipsis-vertical me-4 customGrey mt-1"></i>
 
-                    <button class="bellBtn btn btn-outline-light bg-white border-0" data-bs-toggle="dropdown" aria-expanded="false"><a href=""><i class="fa-solid fa-bell customYellow border border-0"></i></a></button>
+                    <button class="bellBtn btn btn-outline-light bg-white border-0" data-bs-toggle="dropdown"
+                        aria-expanded="false"><a href=""><i
+                                class="fa-solid fa-bell customYellow border border-0"></i></a></button>
                     <ul class="dropdown-menu dropdown-menu-end">
                         <li><a class="dropdown-item" href="#">Profilo</a></li>
                         <li><a class="dropdown-item" href="#">Fatturazione</a></li>
                         <li><a class="dropdown-item" href="#">Logout</a></li>
-                      </ul>
+                    </ul>
 
             </div>
         </nav>
     </header>
 
     <div class="topBox d-flex">
-
 
         <!------------ SIDEBAR ------------>
         <aside>
@@ -103,11 +107,18 @@
                                 <span class="badge rounded-pill  text-white my-fs10">
                                     <i class="fa-solid fa-angles-right text-white"></i>
                                 </span>
-                                <span class="plusElement hiddenBlueElement badge rounded-pill bckDarkblue text-white my-fs10">+</span>
-                                <span class="hiddenBlueElement badge rounded-pill bckDarkblue text-white my-fs10">Boolean mobile app</span>
-                                <span class="hiddenBlueElement badge rounded-pill bckDarkblue text-white my-fs10">Boolean web app</span>
-                                <span class="hiddenBlueElement badge rounded-pill bckDarkblue text-white my-fs10">Boolean blog app</span>
-                                
+                                <span
+                                    class="plusElement hiddenBlueElement badge rounded-pill bckDarkblue text-white my-fs10">+</span>
+                                <span
+                                    class="hiddenBlueElement badge rounded-pill bckDarkblue text-white my-fs10">Boolean
+                                    mobile app</span>
+                                <span
+                                    class="hiddenBlueElement badge rounded-pill bckDarkblue text-white my-fs10">Boolean
+                                    web app</span>
+                                <span
+                                    class="hiddenBlueElement badge rounded-pill bckDarkblue text-white my-fs10">Boolean
+                                    blog app</span>
+
                             </div>
                         </div>
                     </div>
@@ -119,9 +130,10 @@
 
                     <div id="first" class="col-12 d-flex col-md-4 col-lg-3 pt-4 debugHeight">
                         <span class="my-fs14 mt-2 text-white">Nuovo Studente</span>
-                        <button class="customBtn btn btn-primary ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                        <button class="customBtn btn btn-primary ms-2" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#nuovoStudente" aria-controls="offcanvasExample">
                             +</button>
-                        
+
                     </div>
                 </div>
             </div>
@@ -137,97 +149,122 @@
                             <h5 class="card-header">Prossime classi</h5>
                             <table class="table table-sm table-hover">
                                 <thead>
-                                  <tr>
-                                    <td class="w-50" scope="col"><small>Nome</small></td>
-                                    <td class="hiddenTableElement" scope="col" colspan="2"><small>Data inizio</small></td>
-                                    <td class="hiddenTableElement" scope="col" colspan="1"><small>ROI</small></td>
-                                    <td scope="col" colspan="1"><small>Stato</small></td>
-                                    <td scope="col" colspan="3"><small>Azioni</small></td>     
-                                  </tr>
+                                    <tr>
+                                        <td class="w-50" scope="col"><small>Nome</small></td>
+                                        <td class="hiddenTableElement" scope="col" colspan="2"><small>Data
+                                                inizio</small></td>
+                                        <td class="hiddenTableElement" scope="col" colspan="1"><small>ROI</small></td>
+                                        <td scope="col" colspan="1"><small>Stato</small></td>
+                                        <td scope="col" colspan="3"><small>Azioni</small></td>
+                                    </tr>
                                 </thead>
                                 <tbody>
                                     <tr class="my-fs14">
-                                        <td class="w-50" scope="row"><img class="tableImg me-2" src="./img/class-avatar.jpg" alt="class"> Classe 75</td>
+                                        <td class="w-50" scope="row"><img class="tableImg me-2"
+                                                src="./img/class-avatar.jpg" alt="class"> Classe 75</td>
                                         <td class="hiddenTableElement my-fs12" colspan="2">15 Feb 2021</td>
                                         <td class="hiddenTableElement" colspan="1">20%</td>
                                         <td colspan="1"><span class="badge text-bg-success">Done</span></td>
                                         <td class="" colspan="2">
-                                            <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fa-solid fa-trash fa-xs"></i></button>
-                                            <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fa-solid fa-pen fa-xs"></i></button>
+                                            <button type="button" class="btn btn-sm btn-outline-secondary"><i
+                                                    class="fa-solid fa-trash fa-xs"></i></button>
+                                            <button type="button" class="btn btn-sm btn-outline-secondary"><i
+                                                    class="fa-solid fa-pen fa-xs"></i></button>
                                         </td>
                                     </tr>
                                     <tr class="my-fs14">
-                                        <td class="w-50" scope="row"><img class="tableImg me-2" src="./img/class-avatar.jpg" alt="class"> Classe 75</td>
+                                        <td class="w-50" scope="row"><img class="tableImg me-2"
+                                                src="./img/class-avatar.jpg" alt="class"> Classe 75</td>
                                         <td class="hiddenTableElement my-fs12" colspan="2">15 Feb 2021</td>
                                         <td class="hiddenTableElement" colspan="1">20%</td>
                                         <td colspan="1"><span class="badge text-bg-success">Done</span></td>
                                         <td class="" colspan="2">
-                                            <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fa-solid fa-trash fa-xs"></i></button>
-                                            <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fa-solid fa-pen fa-xs"></i></button>
+                                            <button type="button" class="btn btn-sm btn-outline-secondary"><i
+                                                    class="fa-solid fa-trash fa-xs"></i></button>
+                                            <button type="button" class="btn btn-sm btn-outline-secondary"><i
+                                                    class="fa-solid fa-pen fa-xs"></i></button>
                                         </td>
                                     </tr>
                                     <tr class="my-fs14">
-                                        <td class="w-50" scope="row"><img class="tableImg me-2" src="./img/class-avatar.jpg" alt="class"> Classe 75</td>
+                                        <td class="w-50" scope="row"><img class="tableImg me-2"
+                                                src="./img/class-avatar.jpg" alt="class"> Classe 75</td>
                                         <td class="hiddenTableElement my-fs12" colspan="2">15 Feb 2021</td>
                                         <td class="hiddenTableElement" colspan="1">20%</td>
                                         <td colspan="1"><span class="badge bg-warning ">Process</span></td>
                                         <td class="" colspan="2">
-                                            <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fa-solid fa-trash fa-xs"></i></button>
-                                            <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fa-solid fa-pen fa-xs"></i></button>
+                                            <button type="button" class="btn btn-sm btn-outline-secondary"><i
+                                                    class="fa-solid fa-trash fa-xs"></i></button>
+                                            <button type="button" class="btn btn-sm btn-outline-secondary"><i
+                                                    class="fa-solid fa-pen fa-xs"></i></button>
                                         </td>
                                     </tr>
                                     <tr class="my-fs14">
-                                        <td class="w-50" scope="row"><img class="tableImg me-2" src="./img/class-avatar.jpg" alt="class"> Classe 75</td>
+                                        <td class="w-50" scope="row"><img class="tableImg me-2"
+                                                src="./img/class-avatar.jpg" alt="class"> Classe 75</td>
                                         <td class="hiddenTableElement my-fs12" colspan="2">15 Feb 2021</td>
                                         <td class="hiddenTableElement" colspan="1">20%</td>
                                         <td colspan="1"><span class="badge text-bg-success">Done</span></td>
                                         <td class="" colspan="2">
-                                            <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fa-solid fa-trash fa-xs"></i></button>
-                                            <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fa-solid fa-pen fa-xs"></i></button>
+                                            <button type="button" class="btn btn-sm btn-outline-secondary"><i
+                                                    class="fa-solid fa-trash fa-xs"></i></button>
+                                            <button type="button" class="btn btn-sm btn-outline-secondary"><i
+                                                    class="fa-solid fa-pen fa-xs"></i></button>
                                         </td>
                                     </tr>
                                     <tr class="my-fs14">
-                                        <td class="w-50" scope="row"><img class="tableImg me-2" src="./img/class-avatar.jpg" alt="class"> Classe 75</td>
+                                        <td class="w-50" scope="row"><img class="tableImg me-2"
+                                                src="./img/class-avatar.jpg" alt="class"> Classe 75</td>
                                         <td class="hiddenTableElement my-fs12" colspan="2">15 Feb 2021</td>
                                         <td class="hiddenTableElement" colspan="1">20%</td>
                                         <td colspan="1"><span class="badge text-bg-danger">Failed</span></td>
                                         <td class="" colspan="2">
-                                            <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fa-solid fa-trash fa-xs"></i></button>
-                                            <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fa-solid fa-pen fa-xs"></i></button>
+                                            <button type="button" class="btn btn-sm btn-outline-secondary"><i
+                                                    class="fa-solid fa-trash fa-xs"></i></button>
+                                            <button type="button" class="btn btn-sm btn-outline-secondary"><i
+                                                    class="fa-solid fa-pen fa-xs"></i></button>
                                         </td>
                                     </tr>
                                     <tr class="my-fs14">
-                                        <td class="w-50" scope="row"><img class="tableImg me-2" src="./img/class-avatar.jpg" alt="class"> Classe 75</td>
+                                        <td class="w-50" scope="row"><img class="tableImg me-2"
+                                                src="./img/class-avatar.jpg" alt="class"> Classe 75</td>
                                         <td class="hiddenTableElement my-fs12" colspan="2">15 Feb 2021</td>
                                         <td class="hiddenTableElement" colspan="1">20%</td>
                                         <td colspan="1"><span class="badge text-bg-success">Done</span></td>
                                         <td class="" colspan="2">
-                                            <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fa-solid fa-trash fa-xs"></i></button>
-                                            <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fa-solid fa-pen fa-xs"></i></button>
+                                            <button type="button" class="btn btn-sm btn-outline-secondary"><i
+                                                    class="fa-solid fa-trash fa-xs"></i></button>
+                                            <button type="button" class="btn btn-sm btn-outline-secondary"><i
+                                                    class="fa-solid fa-pen fa-xs"></i></button>
                                         </td>
                                     </tr>
                                     <tr class="my-fs14">
-                                        <td class="w-50" scope="row"><img class="tableImg me-2" src="./img/class-avatar.jpg" alt="class"> Classe 75</td>
+                                        <td class="w-50" scope="row"><img class="tableImg me-2"
+                                                src="./img/class-avatar.jpg" alt="class"> Classe 75</td>
                                         <td class="hiddenTableElement my-fs12" colspan="2">15 Feb 2021</td>
                                         <td class="hiddenTableElement" colspan="1">20%</td>
                                         <td colspan="1"><span class="badge text-bg-danger">Failed</span></td>
                                         <td class="" colspan="2">
-                                            <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fa-solid fa-trash fa-xs"></i></button>
-                                            <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fa-solid fa-pen fa-xs"></i></button>
+                                            <button type="button" class="btn btn-sm btn-outline-secondary"><i
+                                                    class="fa-solid fa-trash fa-xs"></i></button>
+                                            <button type="button" class="btn btn-sm btn-outline-secondary"><i
+                                                    class="fa-solid fa-pen fa-xs"></i></button>
                                         </td>
                                     </tr>
                                     <tr class="my-fs14">
-                                        <td class="w-50" scope="row"><img class="tableImg me-2" src="./img/class-avatar.jpg" alt="class"> Classe 75</td>
+                                        <td class="w-50" scope="row"><img class="tableImg me-2"
+                                                src="./img/class-avatar.jpg" alt="class"> Classe 75</td>
                                         <td class="hiddenTableElement my-fs12" colspan="2">15 Feb 2021</td>
                                         <td class="hiddenTableElement" colspan="1">20%</td>
                                         <td colspan="1"><span class="badge text-bg-success">Done</span></td>
                                         <td class="" colspan="2">
-                                            <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fa-solid fa-trash fa-xs"></i></button>
-                                            <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fa-solid fa-pen fa-xs"></i></button>
+                                            <button type="button" class="btn btn-sm btn-outline-secondary"><i
+                                                    class="fa-solid fa-trash fa-xs"></i></button>
+                                            <button type="button" class="btn btn-sm btn-outline-secondary"><i
+                                                    class="fa-solid fa-pen fa-xs"></i></button>
                                         </td>
                                     </tr>
                                 </tbody>
-                              </table>
+                            </table>
                         </div>
 
                         <!-- FAQ -->
@@ -236,8 +273,8 @@
                             <div class="accordion" id="accordionExample">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingOne">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#collapseOne" aria-expanded="true"
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
                                             aria-controls="collapseOne">
                                             <small>Come aggiungere un nuovo studente?</small>
                                         </button>
@@ -324,9 +361,14 @@
                             <h5 class="card-header">Todo</h5>
                             <div class="card-body">
                                 <ul class="list-group list-group-flush border borderGrey rounded">
-                                    <li class="list-group-item my-fs12"><input class="form-check-input me-2" type="checkbox" value="" id="flexCheckDefault">Kickoff nuove classi</li>
-                                    <li class="list-group-item my-fs12"><input class="form-check-input me-2" type="checkbox" value="" id="flexCheckDefault">Lezione su Bootstrap 5 in classe # 75</li>
-                                    <li class="list-group-item my-fs12"><input class="form-check-input me-2" type="checkbox" value="" id="flexCheckDefault">Controllare username github studenti</li>
+                                    <li class="list-group-item my-fs12"><input class="form-check-input me-2"
+                                            type="checkbox" value="" id="flexCheckDefault">Kickoff nuove classi</li>
+                                    <li class="list-group-item my-fs12"><input class="form-check-input me-2"
+                                            type="checkbox" value="" id="flexCheckDefault">Lezione su Bootstrap 5 in
+                                        classe # 75</li>
+                                    <li class="list-group-item my-fs12"><input class="form-check-input me-2"
+                                            type="checkbox" value="" id="flexCheckDefault">Controllare username github
+                                        studenti</li>
                                 </ul>
                             </div>
                         </div>
@@ -338,7 +380,8 @@
                                 <div class="card-body">
 
                                     <p class="card-title">Utenti attivi</p>
-                                    <small class="my-fs10">Lista degli utenti attivi in piattaforma nell'ultimo mese</small>
+                                    <small class="my-fs10">Lista degli utenti attivi in piattaforma nell'ultimo
+                                        mese</small>
 
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -347,7 +390,8 @@
                                     <li class="list-group-item my-fs14"><small>Marzo: 1500</small></li>
                                 </ul>
                                 <div class="card-body">
-                                    <a href="#" class="card-link my-fs14"><small>Visualizza report approfondito</small></a>
+                                    <a href="#" class="card-link my-fs14"><small>Visualizza report
+                                            approfondito</small></a>
                                 </div>
                             </div>
                         </div>
@@ -356,27 +400,31 @@
             </div>
         </main>
 
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <!------ OFFCANVAS ----------------->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="nuovoStudente"
+            aria-labelledby="offcanvasExampleLabel">
             <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
-              <div>
-                Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
-              </div>
-              <div class="dropdown mt-3">
-                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-                  Dropdown button
-                </button>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </div>
+                <div>
+                    Some text as placeholder. In real life you can have the elements you have chosen. Like, text,
+                    images, lists, etc.
+                </div>
+                <div class="dropdown mt-3">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                        Dropdown button
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
             </div>
-          </div>
+        </div>
+
     </div>
 </body>
 
