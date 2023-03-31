@@ -20,12 +20,14 @@ body{
 
 .bckLightGrey{background-color: #e5e5e5;}
 .bckLightblue{background-color: #1b72e8;}
+.bckDarkblue{background-color: #165bba;}
 
 .borderGrey{border: 1px solid #252323;;}
 
 /* CUSTOM FONT-SIZE */
 
-.my-fs10{font-size: 11px;}
+.my-fs8{font-size: 8px;}
+.my-fs10{font-size: 10px;}
 .my-fs14{font-size: 14px;}
 
 /*************** HELPER END **************/
@@ -69,7 +71,12 @@ aside{
 
 /* MAIN */
 
-.debugHeight{height: 130px;}
+.customBtn{
+    height: 34px;
+    width: 34px;
+    border: 1px solid white;
+    line-height: 21px;
+}
 
 .main-container{
     margin-left: 150px;
