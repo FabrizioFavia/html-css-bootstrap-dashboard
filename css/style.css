@@ -154,12 +154,15 @@ aside{
     
     .main-container{margin-left: 70px;}
 
-    .centerContainer{width: calc(100% - 70px);}
-
-    #second{
-        display: flex;
-        order: -1;
+    .centerContainer{
+        width: calc(100% - 70px);
+        margin-left: 10px;
+        margin-right: 10px;
     }
+
+   .card{
+    width: 112%;
+   }
 }
 
 
