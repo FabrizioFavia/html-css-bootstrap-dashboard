@@ -142,6 +142,7 @@ aside{
     
     .sideDscrpt{display: none;}
 
+
     .customTd{width: 75%;}
 
     .hiddenTableElement{display:none;}
@@ -154,15 +155,22 @@ aside{
     
     .main-container{margin-left: 70px;}
 
-    .centerContainer{
-        width: calc(100% - 70px);
-        margin-left: 10px;
-        margin-right: 10px;
+    /* .centerContainer{width: calc(100% - 70px);} */
+
+    #second{
+        display: flex;
+        order: 0;
     }
 
-   .card{
-    width: 112%;
-   }
+    #first{
+        display: flex;
+        order: 2;
+    }
+
+    #third{
+        display: flex;
+        order: 1;
+    }
 }
 
 
