@@ -31,14 +31,13 @@ body{
 .my-fs12{font-size: 12px;}
 .my-fs14{font-size: 14px;}
 
-
-
 /*************** HELPER END **************/
 
 /* HEADER */
 
 .navbar{
     max-height: 54px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
 .bellBtn:active{
@@ -119,6 +118,11 @@ aside{
     height: 24px;
 }
 
+.customOff{
+    min-width: 50%;
+}
+
+
 
 
 /*************** MEDIA QUERY ***************/
@@ -138,10 +142,9 @@ aside{
 
     .smallLogo{display: block;}
 
-    .sideBar{width: 70px;}
+    .sideBar{width: 65px;}
     
     .sideDscrpt{display: none;}
-
 
     .customTd{width: 75%;}
 
@@ -153,24 +156,25 @@ aside{
 
     .sideElement{margin-left: 5px;}
     
-    .main-container{margin-left: 70px;}
+    .main-container{margin-left: 65px;}
 
-    /* .centerContainer{width: calc(100% - 70px);} */
-
-    #second{
-        display: flex;
-        order: 0;
+    #pianoBlaze{
+        order: 1;
     }
 
-    #first{
-        display: flex;
+    #newStudent{
         order: 2;
     }
 
-    #third{
-        display: flex;
-        order: 1;
+    #online > p{
+        padding-top: 0;
     }
+
+    .customOff{
+        min-width: 100%;
+    }
+
+
 }
 
 
