@@ -101,6 +101,7 @@ aside{
 }
 
 .main-container{
+    width: calc(100% - 150px);
     margin-left: 150px;
 }
 
@@ -133,6 +134,15 @@ aside{
     .hiddenBlueElement{display: none;}
 
     .plusElement{display: inline-block;}
+
+    .main-container{
+        width: calc(100% - 150px);
+        margin-left: 150px;
+    }
+
+    .centerContainer{
+        width: calc(100% - 10px);
+    }
 }
 
 /* MEDIUM SCREENS */
@@ -170,7 +180,7 @@ aside{
         padding-top: 0!important;
     }
 
-    #pianoBlaze > .row > .col-12:first-child{
+    #pianoBlaze > .row > .col-12{
         padding-top: 1em!important;
     }
 
