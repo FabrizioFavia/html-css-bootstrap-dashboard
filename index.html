@@ -21,7 +21,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dashboard</title>
 </head>
 
 <body>
@@ -385,7 +385,7 @@
                         <!-- CARD STATS -->
                         <div class="card w-100 my-3 p-3">
                             <div class="card w-100">
-                                
+
                                 <div class="card-body">
                                     <canvas class="mb-3" id="myChart"></canvas>
                                     <p class="card-title">Utenti attivi</p>
@@ -410,7 +410,8 @@
         </main>
 
         <!------ OFFCANVAS ----------------->
-        <div class="customOff offcanvas offcanvas-end" tabindex="-1" id="nuovoStudente" aria-labelledby="offcanvasExampleLabel">
+        <div class="customOff offcanvas offcanvas-end" tabindex="-1" id="nuovoStudente"
+            aria-labelledby="offcanvasExampleLabel">
             <div class="offcanvas-header">
                 <p class="offcanvas-title" id="offcanvasExampleLabel">Inserisci un nuovo studente</p>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -424,61 +425,65 @@
                             <div class="mb-3">
                                 <label for="exampleFormControlInput1" class="form-label">Nome</label>
                                 <input type="text" class="form-control" id="exampleFormControlInput1">
-                              </div>
-                              <label for="exampleFormControlInput1" class="form-label">Email</label>
-                              <div class="input-group mb-3">
+                            </div>
+                            <label for="exampleFormControlInput1" class="form-label">Email</label>
+                            <div class="input-group mb-3">
                                 <span class="input-group-text" id="basic-addon1">@</span>
-                                <input type="email" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
-                              </div>
+                                <input type="email" class="form-control" aria-label="Username"
+                                    aria-describedby="basic-addon1">
+                            </div>
                         </div>
                         <!-- RIGHT -->
                         <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12">
                             <div class="mb-3">
                                 <label for="exampleFormControlInput1" class="form-label">Cognome</label>
                                 <input type="text" class="form-control" id="exampleFormControlInput1">
-                              </div>
-                              <div class="mb-3">
+                            </div>
+                            <div class="mb-3">
                                 <label for="exampleFormControlInput1" class="form-label">Password</label>
                                 <input type="password" class="form-control" id="exampleFormControlInput1">
-                              </div>
+                            </div>
                         </div>
                         <!-- CENTER -->
                         <div class="col-12">
                             <div class="mb-3">
                                 <label for="exampleFormControlInput1" class="form-label">Indirizzo</label>
                                 <input type="text" class="form-control" id="exampleFormControlInput1">
-                              </div>
+                            </div>
                             <div class="row">
                                 <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5 col-sm-12">
                                     <div class="mb-3">
                                         <label for="exampleFormControlInput1" class="form-label">Città</label>
                                         <input type="text" class="form-control" id="exampleFormControlInput1">
-                                      </div>
+                                    </div>
                                 </div>
                                 <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12">
                                     <div class="mb-3">
                                         <label for="exampleFormControlInput1" class="form-label">Stato</label>
-                                        <select class="form-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+                                        <select class="form-select" id="inputGroupSelect04"
+                                            aria-label="Example select with button addon">
                                             <option selected>scegli...</option>
                                             <option value="1">Italia</option>
                                             <option value="2">Francia</option>
                                             <option value="3">Germania</option>
-                                          </select>
-                                      </div>
+                                        </select>
+                                    </div>
                                 </div>
                                 <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12">
                                     <div class="mb-3">
                                         <label for="exampleFormControlInput1" class="form-label">Cap</label>
                                         <input type="text" class="form-control" id="exampleFormControlInput1">
-                                      </div>
+                                    </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="mb-4">
                                         <label for="exampleFormControlInput1" class="form-label">Foto</label>
-                                        <input type="file" class="form-control" id="inputGroupFile03" aria-describedby="inputGroupFileAddon03" aria-label="Upload">
-                                      </div>
-                                      <div class="list-group-item mb-3"><input class="form-check-input me-2"
-                                        type="checkbox" value="" id="flexCheckDefault">Seleziona per proseguire</div>
+                                        <input type="file" class="form-control" id="inputGroupFile03"
+                                            aria-describedby="inputGroupFileAddon03" aria-label="Upload">
+                                    </div>
+                                    <div class="list-group-item mb-3"><input class="form-check-input me-2"
+                                            type="checkbox" value="" id="flexCheckDefault">Seleziona per proseguire
+                                    </div>
                                 </div>
                                 <div class="col-12"></div>
                                 <div class="col-12">
@@ -492,32 +497,44 @@
             </div>
         </div>
     </div>
-    
-      
-      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-      
-      <script>
-        const ctx = document.getElementById('myChart');
-      
-        new Chart(ctx, {
-          type: 'bar',
-          data: {
-            labels: ['Gennaio', 'Febbraio', 'Marzo', 'Aprile', 'Maggio', 'Giugno'],
-            datasets: [{
-              label: 'Utenti attivi',
-              data: [12, 19, 3, 5, 2, 3],
-              borderWidth: 1
-            }]
-          },
-          options: {
-            scales: { 
-              y: {
-                beginAtZero: true
-              }
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script>
+        var ctx = document.getElementById("myChart");
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ["Gennaio", "Febbraio", "Marzo", "Aprile", "Maggio", "Giugno"],
+                datasets: [{
+                    label: 'Percentage',
+                    data: [1200, 800, 1500, 400, 1000, 1700],
+                    backgroundColor: [
+                        'rgba(54, 162, 235, 0.2)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+
+                    yAxes: [{
+                        ticks: {
+
+                            min: 0,
+                            max: 2000,
+                            callback: function (value) { return value + "%" }
+                        },
+                        scaleLabel: {
+                            display: true,
+                            labelString: "Percentage"
+                        }
+                    }]
+                }
             }
-          }
         });
-      </script>
+    </script>
 </body>
 
 
