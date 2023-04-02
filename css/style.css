@@ -167,7 +167,11 @@ aside{
     }
 
     #online > p{
-        padding-top: 0;
+        padding-top: 0!important;
+    }
+
+    #pianoBlaze > .row > .col-12:first-child{
+        padding-top: 1em!important;
     }
 
     .customOff{

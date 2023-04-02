@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -384,9 +385,9 @@
                         <!-- CARD STATS -->
                         <div class="card w-100 my-3 p-3">
                             <div class="card w-100">
-                                <img src="./img/stats.jpeg" class="card-img-top" alt="Stats">
+                                
                                 <div class="card-body">
-
+                                    <canvas class="mb-3" id="myChart"></canvas>
                                     <p class="card-title">Utenti attivi</p>
                                     <small class="my-fs10">Lista degli utenti attivi in piattaforma nell'ultimo
                                         mese</small>
@@ -481,7 +482,7 @@
                                 </div>
                                 <div class="col-12"></div>
                                 <div class="col-12">
-                                    <button type="button" class="btn btn-primary">Salva</button>
+                                    <button type="submit" class="btn btn-primary">Salva</button>
                                     <button type="button" class="btn btn-warning">Svuota</button>
                                 </div>
                             </div>
@@ -490,8 +491,36 @@
                 </div>
             </div>
         </div>
-
     </div>
+    <div>
+        <canvas id="myChart"></canvas>
+      </div>
+      
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      
+      <script>
+        const ctx = document.getElementById('myChart');
+      
+        new Chart(ctx, {
+          type: 'bar',
+          data: {
+            labels: ['Gennaio', 'Febbraio', 'Marzo', 'Aprile', 'Maggio', 'Giugno'],
+            datasets: [{
+              label: 'Utenti attivi',
+              data: [12, 19, 3, 5, 2, 3],
+              borderWidth: 1
+            }]
+          },
+          options: {
+            scales: { 
+              y: {
+                beginAtZero: true
+              }
+            }
+          }
+        });
+      </script>
 </body>
+
 
 </html>
